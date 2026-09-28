@@ -352,3 +352,9 @@ h1 {
   margin-top: 0.75rem;
   color: var(--muted);
 }
+
+.responsive-svg-container {
+margin: 0 auto; /* center */
+width: 100%; /* fill parent width */
+max-width: 1200px; /* cap max width */
+}
