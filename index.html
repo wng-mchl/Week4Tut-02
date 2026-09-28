@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home</title>
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="stylesheet" href="css/style.css" />
+
+
 </head>
+
 <body>
   <div id="navbar"></div>
 
   <main>
     <section class="hero">
+
       <div class="intro-text">
         <h1>Welcome</h1>
-        <p>Your trusted electrical appliance information provider in Australia. Navigate to About Us for our mission, and Televisions for a breakdown on televisions in Australia.</p>
+        <svg width="300" height="150"></svg>
+        <p>Your trusted electrical appliance information provider in Australia. Navigate to About Us for our mission,
+          and Televisions for a breakdown on televisions in Australia.</p>
       </div>
       <div class="intro-graphic">
         <!-- Replace with your Australia graphic, e.g. images/australia.png -->
-        <img src="images/australia.png" alt="Graphic of Australia" title="Graphic of Australia"/>
+        <img src="images/australia.png" alt="Graphic of Australia" title="Graphic of Australia" />
       </div>
     </section>
 
     <hr class="intro-divider" />
 
-    <p class="intro-flavour">Data taken from 
-      <a href=https://data.gov.au/data/dataset/energy-rating-for-household-appliances/resource/93a615e5-935e-4713-a4b0-379e3f6dedc9>The Australian Government</a>
+    <p class="intro-flavour">Data taken from
+      <a
+        href=https://data.gov.au/data/dataset/energy-rating-for-household-appliances/resource/93a615e5-935e-4713-a4b0-379e3f6dedc9>The
+        Australian Government</a>
       . This project is intended as a educational exercise only.
     </p>
   </main>
@@ -34,5 +43,9 @@
 
   <script src="js/nav.js"></script>
   <script src="js/footer.js"></script>
+  <!-- Load D3 first, then your D3 code file -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/energy-d3.js"></script>
 </body>
-</html>
+
+</html> 
