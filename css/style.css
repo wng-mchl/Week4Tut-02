@@ -1,0 +1,354 @@
+:root {
+  --nav-bg: #1f2937;
+  --nav-text: #e5e7eb;
+  --nav-text-active: #ffffff;
+  --nav-accent: #3b82f6;
+  --bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Lets main grow so the footer stays at the bottom on short pages */
+main {
+  flex: 1;
+}
+
+.site-footer {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  text-align: left;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+.navbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brand-logo {
+  height: 2rem;
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--nav-bg);
+  padding: 0.9rem 1.5rem;
+}
+
+.navbar .brand {
+  color: var(--nav-text-active);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.navbar a.nav-link {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.1rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.navbar a.nav-link:hover {
+  color: var(--nav-text-active);
+}
+
+.navbar a.nav-link.active {
+  color: var(--nav-text-active);
+  border-bottom-color: var(--nav-accent);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.25rem;
+  padding: 2.5rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.hero .intro-text {
+  flex: 1 1 320px;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--nav-accent);
+  margin-bottom: 1rem;
+}
+
+.hero .intro-text p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.intro-graphic {
+  flex: 1 1 280px;
+  max-width: 360px;
+}
+
+.intro-graphic img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.intro-divider {
+  border: none;
+  border-top: 1px solid #d1d5db;
+  margin: 2rem 0;
+}
+
+.intro-flavour {
+  color: var(--muted);
+}
+
+.bubble-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.bubble {
+  background: #f3f4f6;
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+}
+
+.bubble h3 {
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.bubble p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.chart-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.chart-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  padding: 1em;
+}
+
+.chart-card figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Chart heading: "Q1" badge beside the question text */
+.chart-question {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.q-num {
+  flex: none;
+  background: var(--nav-accent);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  margin-top: 0.1rem;
+}
+
+/* Analysis section below each chart */
+.analysis {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.analysis h4 {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+}
+
+.analysis p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre-line; /* line breaks (\n) in your analysis text are kept */
+}
+
+/* In the carousel, keep the heading and analysis at a readable width */
+.carousel .chart-question,
+.carousel .analysis {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.placeholder {
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* Reusable image frame: wrap any <img> in a div with this class and it will
+   always be centered, scaled to fit, and bordered - no matter the image's
+   real width/height. Use it anywhere you drop in a picture. */
+.img-frame {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+  padding: 1rem;
+  max-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Grid/Carousel toggle buttons */
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.view-toggle button {
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.view-toggle button.active {
+  background: var(--nav-accent);
+  border-color: var(--nav-accent);
+  color: #fff;
+}
+
+/* Carousel view: title on top, image centered, caption/counter below */
+.carousel {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.carousel img {
+  padding: 1.5em
+}
+
+
+.carousel-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.carousel-main img {
+  max-width: 100%;
+  max-height: 480px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.carousel-main button {
+  flex: none;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: var(--text);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.carousel-main button:hover {
+  background: #f3f4f6;
+}
+
+.carousel>p:first-of-type {
+  margin-top: 0.75rem;
+  color: var(--muted);
+}

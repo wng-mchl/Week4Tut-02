@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Televisions</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main>
+    <h1>Television Data</h1>
+    
+
+    <!-- Buttons that switch between the grid and carousel views (see js/gallery.js) -->
+    <div class="view-toggle">
+      <button id="grid-view-btn" class="active">Grid View</button>
+      <button id="carousel-view-btn">Carousel View</button>
+    </div>
+
+    <!-- Single container: gallery.js clears and rebuilds this with either the
+         grid markup or the carousel markup, so only one view exists at a time. -->
+    <div id="view-container"></div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
+    

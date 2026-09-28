@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main>
+    <h1>About Us</h1>
+    <p class="muted">This site is done as demonstration assignment spanning across Week 2 to Week 4 for COS30045.</p>
+
+    <h2>KNIME Display</h2>
+
+    <div class="img-frame">
+      <img src="images/knime-workflow.png" alt="Knime Workflow for Data Preparation" title="Data Preparation Knime Workflow">
+    </div>
+
+    <h2>Questions to Answer</h2>
+
+    <div class="bubble-grid">
+      <div class="bubble">
+        <h3>1. What type of TV screen technologies are currently available in Australia and which are the most frequent?</h3>
+        <p>The Screen_Tech column and the SoldIn column will both provide information on which brand of televisions are available, and counting the amount of rows for frequency will show which Screen_Tech value pops up the most. For currently available, it will just be to check which brands have the Available tag in the Availability column.</p>
+      </div>
+
+      <div class="bubble">
+        <h3>2. What screen sizes are available and which are most frequent?</h3>
+        <p>The column Screensize is usable for determining available screen sizes, since it provides a diagonal measurement, and frequency can be calculated the same way.</p>
+      </div>
+
+      <div class="bubble">
+        <h3>3. Which brands have the largest number of models?</h3>
+        <p>The Brand_Reg column as the class and the Model_No column as the count.</p>
+      </div>
+
+      <div class="bubble">
+        <h3>4. Which type of screen technology consumes the least amount of power?</h3>
+        <p>Sort the Screen_Tech column in ascending order according to the Labelled energy consumption.</p>
+      </div>
+
+      <div class="bubble">
+        <h3>5. What is the relationship between screen size and power use?</h3>
+        <p>Will require both Screen_size and labelled energy consumption.</p>
+      </div>
+
+      <div class="bubble">
+        <h3>6. What is the relationship between star rating and screen size?</h3>
+        <p>Will require Star2 and Screensize.</p>
+      </div>
+
+      <div class="bubble">
+        <h3>7. Are there differences in power consumption between brands?</h3>
+        <p>Will require Brand_Reg and Labelled energy consumption.</p>
+      </div>
+
+      <div class="bubble">
+        <h3>8. Any other questions you can think of that could be investigated with this data set?</h3>
+        <p>Maybe questions such as which products require a webpage for better accessibility and documentation, as some products do not have websites according to Product Website. Country for manufacturer origin could be good to view where most televisions are exported from.</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>
